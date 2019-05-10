@@ -38,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
 
 
         //CODE xin quyền cho tất cả API
+        //nếu thành công sẽ không có thông báo nào xin quyền cả, mà sẽ có quyền luôn
+        //Nếu không xuống xem hàm onRequestPermissionsResult(int requestCode,...)
         if (ContextCompat.checkSelfPermission(MainActivity.this,
                 Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
             if (ActivityCompat.shouldShowRequestPermissionRationale(MainActivity.this,
